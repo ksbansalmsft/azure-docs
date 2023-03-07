@@ -36,6 +36,7 @@ These dimensions are measured independently, but they interact with each other a
 ### Prerequisites
  - Azure subscription: [Create an Azure subscription for free](https://azure.microsoft.com/free/)
  - Application Insights resource: [Create an Application Insights resource](create-workspace-resource.md#create-a-workspace-based-resource)
+ - Use the [Click Analytics Auto collection plugin](javascript-feature-extensions.md) via npm to emit the required attributes
  - Instrument the below attributes to calculate HEART metrics:
 
   | Source          | Attribute            | Description                                |
@@ -57,7 +58,7 @@ These dimensions are measured independently, but they interact with each other a
   | pageViews       | operation_Id         | Correlate telemetry events                 |
   | pageViews       | user_Id            	 | Unique user identifier                     |
 
-*Use the [Click Analytics Auto collection plugin](javascript-feature-extensions.md) via npm to emit these attributes.
+
 
 >[!TIP]
 > To understand how to effectively use the Click Analytics plugin, please refer to [this section](javascript-feature-extensions.md#how-to-effectively-use-the-plugin).
